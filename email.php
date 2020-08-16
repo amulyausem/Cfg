@@ -2,7 +2,7 @@
 include('preincludes/dbh.php');
 include('preincludes/session.php');
 
-$to=$_SESSION["classid"];
+$to=$_SESSION["email"];
                           
 
 require_once('C:\Users\varsh\Desktop\new\htdocs\emss\class.phpmailer.php');
