@@ -1,32 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<form method="post">
-		
-		<br>
-		<label>Enter Message</label>
-		<input type="text" name="message">
-		<input type="submit" name="submit">
-		
-	</form>
-</body>
-</html>
-
+<?php
+	include ('preincludes/dbh.php');
+	include ('preincludes/session.php');
+?>
 
 
 
 <?php
-	include ('preincludes/dbh.php');
-	include ('preincludes/session.php');
-	if(isset($_POST["submit"]))
-	{
-		$msg=$_POST["message"];
-	$query="select phone from `users` where job=0 and classid=$_SESSION['classid']'";
+	
+	
+	
+	$query="select * from `users` where job=0 and classid='jhdhhj'";
 
 	$result=mysqli_query($link,$query);
+	
 	while($res2 = mysqli_fetch_assoc($result))
 	{
 		// Authorisation details.
@@ -38,8 +24,8 @@
 	
 	// Data for text message. This is the text message data.
 	$sender = "TXTLCL"; // This is who the message appears to be from.
-	$numbers = "91".res2['phone']; // A single number or a comma-seperated list of numbers
-	$message = $msg;
+	$numbers = "91".$res2["phone"]; // A single number or a comma-seperated list of numbers
+	$message = "Integration testing";
 	// 612 chars or less
 	// A single number or a comma-seperated list of numbers
 	$message = urlencode($message);
@@ -56,7 +42,7 @@
 	}
 	
 
-}
+
 ?>
 
 	
