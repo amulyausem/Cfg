@@ -55,7 +55,7 @@ if(mysqli_num_rows($result)==0){
         if(!$result){
         die('Query Failed');}
         else{
-            header("Location: login.html");
+            header("Location: newlogin.html");
         }
 }
 else{

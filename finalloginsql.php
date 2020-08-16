@@ -17,13 +17,18 @@ $query = "select * from `users` where email='$email' && classid='$id' ";
 $result = mysqli_query($link,$query);
 $row = mysqli_fetch_assoc($result);
 $name=$row['name'];
-                                   
+$job=$row['job'];                            
                                      
 if (mysqli_num_rows($result) > 0) {
    $_SESSION["email"] = "$email";
    $_SESSION["id"]="$id";
    $_SESSION["name"]="$name";
    //header("Location: home.html");
+   if($job)
+   header("Location: Views/Teachers/Teacher_view.html");
+   else
+   	echo "Student Login Successful";
+  
 }
 else {
    header("Location: newlogin1.html");
