@@ -1,15 +1,10 @@
 <?php  
-session_start();  
-?>  
-
-
-<?php
-include ('preincludes/session.php');
-include ('preincludes/dbh.php');
+include('preincludes/dbh.php');
+include('preincludes/session.php');
 
 $email='';
 if( isset( $_POST['email'])) {
-    $id = $_POST['email']; 
+    $email = $_POST['email']; 
 } 
 
 $id = ''; 
@@ -21,15 +16,22 @@ if( isset( $_POST['id'])) {
 $query = "select * from `users` where email='$email' && classid='$id' ";
 $result = mysqli_query($link,$query);
 $row = mysqli_fetch_assoc($result);
-                                   
+$name=$row['name'];
+$job=$row['job'];                            
                                      
 if (mysqli_num_rows($result) > 0) {
    $_SESSION["email"] = "$email";
-   header("Location: home.html");
+   $_SESSION["id"]="$id";
+   $_SESSION["name"]="$name";
+   //header("Location: home.html");
+   if($job)
+   header("Location: Views/Teachers/Teacher_view.html");
+   else
+   	echo "Student Login Successful";
+  
 }
 else {
-   $_SESSION["error"]="Invalid Credentials";
-   header("Location: login1.html");
+   header("Location: newlogin1.html");
 }
 mysqli_close($link);
 ?>

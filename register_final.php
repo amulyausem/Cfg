@@ -33,13 +33,8 @@ $job=0;
 
 
 <?php
-session_start();
-?>
-<?php
-$link = mysqli_connect('localhost', 'root' , 'Jonathan@123', 'cfg');
-if(!$link){
-    die('error connection');
-}
+include ('preincludes/dbh.php');
+include ('preincludes/session.php');
 $name=$_POST['field1'];
 $email=$_POST['field2'];
 $id=$_POST['field5'];
@@ -59,6 +54,9 @@ if(mysqli_num_rows($result)==0){
         $result=mysqli_query($link,$query);
         if(!$result){
         die('Query Failed');}
+        else{
+            header("Location: newlogin.html");
+        }
 }
 else{
     header("Location: exists.html");
