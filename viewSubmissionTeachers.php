@@ -7,11 +7,26 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="TeacherView.css">
 
     <style>
         .input {
             width: 80px;
+        }
+
+        .blue-bg {
+            background-color: #394989;
+        }
+
+        input[type=submit].blue-bg:hover, button.blue-bg:hover {
+            background-color: #fddb3a;
+        }
+
+        .yellow-bg {
+            background-color: #fddb3a;
+        }
+
+        .black-bg {
+            background-color: #222;
         }
     </style>
 </head>
@@ -44,7 +59,7 @@
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Submissions</h1>
-
+                    <button class="align-self-end btn blue-bg mb-1 text-white">Logout</button>
                 </div>
 
                 <div class="container-fluid">
@@ -52,7 +67,7 @@
 
 
                     <table class="table table-striped table-hover">
-                        <thead class="thead-dark">
+                        <thead class="blue-bg text-white">
                             <tr>
                                 <th scope="col">Roll Number</th>
                                 <th scope="col">Name</th>
@@ -68,7 +83,8 @@
                                 <form action="#" onsubmit="sayHello()">
                                     <td class="input"><input type="text" name="marks" value="" class="form-control"
                                             placeholder="Add marks here" required /></td>
-                                    <td class="input"><input type="submit" value="Submit" class="btn btn-success"></td>
+                                    <td class="input"><input type="submit" value="Submit"
+                                            class="btn blue-bg text-white"></td>
                                 </form>
                             </tr>
                             <tr>
@@ -77,8 +93,9 @@
                                 <td>Maths</td>
                                 <form action="#" onsubmit="sayHello()">
                                     <td class="input"><input type="text" name="marks" value="" class="form-control"
-                                            placeholder="Add marks here" required/></td>
-                                    <td class="input"><input type="submit" value="Submit" class="btn btn-success"></td>
+                                            placeholder="Add marks here" required /></td>
+                                    <td class="input"><input type="submit" value="Submit"
+                                            class="btn blue-bg text-white"></td>
                                 </form>
                             </tr>
                         </tbody>
@@ -86,14 +103,14 @@
                 </div>
 
 
-                
+
 
             </main>
         </div>
     </div>
     <script>
         function sayHello() {
-            
+
             alert('Marks Recorded');
         }
     </script>

@@ -3,19 +3,45 @@
 	include ('preincludes/session.php');
 ?>
 
-
-
 <?php
-	
-	
-	
-	$query="select * from `users` where job=0 and classid='jhdhhj'";
+require __DIR__ . '\twilio-php-main\src\Twilio\autoload.php';
+use Twilio\Rest\Client;
+// In production, these should be environment variables.
+$account_sid = 'AC5a4dc3153eae288b2a30de2afd4df383';
+$auth_token = '2599be1a9827db778b2c59d0ef8502e5';
+$twilio_number = "+12057821604"; // Twilio number you own
+
+$query="select * from `users` where job='0' and classid='jhdhhj'";
 
 	$result=mysqli_query($link,$query);
 	
 	while($res2 = mysqli_fetch_assoc($result))
 	{
-		// Authorisation details.
+$client = new Client($account_sid, $auth_token);
+// Below, substitute your cell phone
+$client->messages->create(
+    '+91'.$res2["phone"],  
+    [
+        'from' => $twilio_number,
+        'body' => 'This message is Un-Composed'
+    ] 
+
+
+);
+echo "succes";}
+?>
+
+<?php
+	
+	
+	
+	/*$query="select * from `users` where job='0' and classid='".$_SESSION['id']."'";
+
+	$result=mysqli_query($link,$query);
+	
+	while($res2 = mysqli_fetch_assoc($result))
+	{
+	// Authorisation details.
 	$username = "jonathandabreo24@gmail.com";
 	$hash = "ee5cf6f31f0ebccea517ece4e611200f4e9cbc71280abc249a4afe4a301dd66a";
 
@@ -40,7 +66,7 @@
 
 	echo $result;
 	}
-	
+	*/
 
 
 ?>
