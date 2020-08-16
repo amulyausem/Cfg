@@ -36,33 +36,34 @@
         <div
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 class="h2">Dashboard</h1>
+          <button class="align-self-end btn blue-bg mb-1 text-white">Logout</button>
 
         </div>
         <!--    Basic Stats     -->
         <div class="row">
           <div class="col">
-            <div class="card bg-secondary text-center">
+            <div class="card text-center blue-bg text-white">
               <h4>Total Students</h4>
               <p>NO_OF_STUDENTS</p>
             </div>
           </div>
           <div class="col">
-            <div class="card bg-secondary text-center">
+            <div class="card text-center blue-bg text-white">
               <h4>Assignments</h4>
               <p>NO_OF_STUDENTS</p>
             </div>
           </div>
           <div class="col">
-            <div class="card bg-secondary text-center">
+            <div class="card text-center blue-bg text-white">
               <h4>View Submissions</h4>
-              <p><a href="#">Click Here</a></p>
+              <p><a href="#" class="text-white">Click Here</a></p>
             </div>
           </div>
         </div>
         <!--    Basic Stats     -->
         <hr>
         <!--   Scrollable Text View    -->
-        <div class="container mt-5 jumbotron pt-1" id="text_view">
+        <div class="container mt-5 jumbotron pt-1" style="background: rgb(57, 73, 137, .8);" id="text_view">
           <!--     Dynamically Generated list of cards         -->
           <div class="card mb-1 p-2">
             <h5 class="p-0 m-0">TITLE</h5>
@@ -124,7 +125,7 @@
             <input type="submit" value="Add Assignment" class="btn btn-success w-100" id="submit_assignments">
           </form>
         </div>
-        <button class="btn btn-primary" id="add_button"><span id="add_plus">+</span></button>
+        <button class="btn blue-bg text-white" id="add_button"><span id="add_plus">+</span></button>
         <!--   Scrollable Text View    -->
 
         <hr>
@@ -133,7 +134,7 @@
           <h2>Upload file here</h2>
           <input type="file" name="upload" id="" required>
           <br>
-          <input type="submit" value="Upload" class="btn btn-success mt-2">
+          <input type="submit" value="Upload" class="btn blue-bg text-white mt-2">
         </form>
         <!--   File upload   -->
         <hr>
@@ -144,7 +145,7 @@
           </label>
           <textarea name="SMS message" id="" cols="30" rows="10" placeholder="Type the SMS message here"
             class="form-control mt-4" required></textarea>
-          <input type="submit" value="Send" class="btn btn-success mt-2 ">
+          <input type="submit" value="Send" class="btn blue-bg text-white mt-2 ">
         </form>
         <!--   SMS Text Area    -->
 
