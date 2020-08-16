@@ -1,0 +1,18 @@
+#text_view {
+    overflow: scroll;
+    height: 50vh;
+}
+
+#add_button {
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+#add_plus {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#AAssignment-form {
+    overflow: scroll
+}
