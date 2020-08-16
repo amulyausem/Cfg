@@ -1,148 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="TeacherView.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="TeacherView.css">
 </head>
-<body>
-   <div class="container-fluid mt-1 w-100">
-    <div class="row">
-<!--   SideNav    -->
-        <nav class="col-md-3 col-lg-2 d-md-blockbg-light sidebar-collapse border-right">
-            <div class="sidebar-sticky pt-3">
 
-        <h4 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-          <span>Teacher</span>
-          <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
-            <span data-feather="plus-circle"></span>
-          </a>
-        </h4>
-        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-1 mb-1 text-muted">
-          <span>Class</span>
-          <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
-            <span data-feather="plus-circle"></span>
-          </a>
-        </h6>
-      </div>
-        </nav>
-<!--   SideNav    -->
-<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Dashboard</h1>
-        
-      </div>
-       <!--    Basic Stats     -->
-          <div class="row">
-             <div class="col">
-              <div class="card bg-secondary text-center">
-                <h4>Total Students</h4>
-                <p>NO_OF_STUDENTS</p>
-              </div>
-              </div>
-              <div class="col">
-              <div class="card bg-secondary text-center">
-                <h4>Assignments</h4>
-                <p>NO_OF_STUDENTS</p>
-              </div>
-              </div>
-              <div class="col">
-              <div class="card bg-secondary text-center">
-                <h4>View Submissions</h4>
-                <p><a href="#">Click Here</a></p>
-              </div>
-              </div>
+<body>
+  <div class="container-fluid mt-1 w-100">
+    <div class="row">
+      <!--   SideNav    -->
+      <nav class="col-md-3 col-lg-2 d-md-blockbg-light sidebar-collapse border-right">
+        <div class="sidebar-sticky pt-3">
+
+          <h4 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Teacher</span>
+            <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+              <span data-feather="plus-circle"></span>
+            </a>
+          </h4>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-1 mb-1 text-muted">
+            <span>Class</span>
+            <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+              <span data-feather="plus-circle"></span>
+            </a>
+          </h6>
+        </div>
+      </nav>
+      <!--   SideNav    -->
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <div
+          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Dashboard</h1>
+
+        </div>
+        <!--    Basic Stats     -->
+        <div class="row">
+          <div class="col">
+            <div class="card bg-secondary text-center">
+              <h4>Total Students</h4>
+              <p>NO_OF_STUDENTS</p>
+            </div>
           </div>
-    <!--    Basic Stats     -->
-    <hr>
-    <!--   Scrollable Text View    -->
-           <div class="container mt-5 jumbotron pt-1" id="text_view">
-    <!--     Dynamically Generated list of cards         -->
-               <div class="card mb-1 p-2">
-                   <h5 class="p-0 m-0">TITLE</h5>
-                   <p class="p-0 m-0">DESCRIPTION</p>
-               </div>
-               <div class="card mb-1 p-2">
-                   <h5 class="p-0 m-0">TITLE</h5>
-                   <p class="p-0 m-0">DESCRIPTION</p>
-               </div>
-               <div class="card mb-1 p-2">
-                   <h5 class="p-0 m-0">TITLE</h5>
-                   <p class="p-0 m-0">DESCRIPTION</p>
-               </div>
-               <div class="card mb-1 p-2">
-                   <h5 class="p-0 m-0">TITLE</h5>
-                   <p class="p-0 m-0">DESCRIPTION</p>
-               </div>
-               <div class="card mb-1 p-2">
-                   <h5 class="p-0 m-0">TITLE</h5>
-                   <p class="p-0 m-0">DESCRIPTION</p>
-               </div>
-               <div class="card mb-1 p-2">
-                   <h5 class="p-0 m-0">TITLE</h5>
-                   <p class="p-0 m-0">DESCRIPTION</p>
-               </div>
-               <div class="card mb-1 p-2">
-                   <h5 class="p-0 m-0">TITLE</h5>
-                   <p class="p-0 m-0">DESCRIPTION</p>
-               </div>
-               <div class="card mb-1 p-2">
-                   <h5 class="p-0 m-0">TITLE</h5>
-                   <p class="p-0 m-0">DESCRIPTION</p>
-               </div>
-               <div class="card mb-1 p-2">
-                   <h5 class="p-0 m-0">TITLE</h5>
-                   <p class="p-0 m-0">DESCRIPTION</p>
-               </div>
-               <div class="card mb-1 p-2">
-                   <h5 class="p-0 m-0">TITLE</h5>
-                   <p class="p-0 m-0">DESCRIPTION</p>
-               </div>
-               <div class="card mb-1 p-2">
-                   <h5 class="p-0 m-0">TITLE</h5>
-                   <p class="p-0 m-0">DESCRIPTION</p>
-               </div>
-               
-        <!--     Dynamically Generated list of cards         -->
-           </div>
-<!--
-           <div class="card w-25" >
-              <form-group class="p-1" id="Assignment-form">
-                 <div class="card-title">
-                  <input type="text" name="title" id="" class="w-100" placeholder="Title">
-                  <textarea name="details" id="" cols="30" rows="10" placeholder="Details" ></textarea>
-                 </div>
-              </form-group>
+          <div class="col">
+            <div class="card bg-secondary text-center">
+              <h4>Assignments</h4>
+              <p>NO_OF_STUDENTS</p>
+            </div>
           </div>
--->
-           <button class="btn btn-primary" id="add_button"><span id="add_plus">+</span></button>
-    <!--   Scrollable Text View    -->
-      
-       <hr>
+          <div class="col">
+            <div class="card bg-secondary text-center">
+              <h4>View Submissions</h4>
+              <p><a href="#">Click Here</a></p>
+            </div>
+          </div>
+        </div>
+        <!--    Basic Stats     -->
+        <hr>
+        <!--   Scrollable Text View    -->
+        <div class="container mt-5 jumbotron pt-1" id="text_view">
+          <!--     Dynamically Generated list of cards         -->
+          <div class="card mb-1 p-2">
+            <h5 class="p-0 m-0">TITLE</h5>
+            <p class="p-0 m-0">DESCRIPTION</p>
+          </div>
+          <div class="card mb-1 p-2">
+            <h5 class="p-0 m-0">TITLE</h5>
+            <p class="p-0 m-0">DESCRIPTION</p>
+          </div>
+          <div class="card mb-1 p-2">
+            <h5 class="p-0 m-0">TITLE</h5>
+            <p class="p-0 m-0">DESCRIPTION</p>
+          </div>
+          <div class="card mb-1 p-2">
+            <h5 class="p-0 m-0">TITLE</h5>
+            <p class="p-0 m-0">DESCRIPTION</p>
+          </div>
+          <div class="card mb-1 p-2">
+            <h5 class="p-0 m-0">TITLE</h5>
+            <p class="p-0 m-0">DESCRIPTION</p>
+          </div>
+          <div class="card mb-1 p-2">
+            <h5 class="p-0 m-0">TITLE</h5>
+            <p class="p-0 m-0">DESCRIPTION</p>
+          </div>
+          <div class="card mb-1 p-2">
+            <h5 class="p-0 m-0">TITLE</h5>
+            <p class="p-0 m-0">DESCRIPTION</p>
+          </div>
+          <div class="card mb-1 p-2">
+            <h5 class="p-0 m-0">TITLE</h5>
+            <p class="p-0 m-0">DESCRIPTION</p>
+          </div>
+          <div class="card mb-1 p-2">
+            <h5 class="p-0 m-0">TITLE</h5>
+            <p class="p-0 m-0">DESCRIPTION</p>
+          </div>
+          <div class="card mb-1 p-2">
+            <h5 class="p-0 m-0">TITLE</h5>
+            <p class="p-0 m-0">DESCRIPTION</p>
+          </div>
+          <div class="card mb-1 p-2">
+            <h5 class="p-0 m-0">TITLE</h5>
+            <p class="p-0 m-0">DESCRIPTION</p>
+          </div>
+
+          <!--     Dynamically Generated list of cards         -->
+        </div>
+        <div class="card w-25 none" id="popup">
+          <form-group class="p-1" id="Assignment-form">
+            <div class="card-title">
+              <input type="text" name="title" id="" class="w-100" placeholder="Title" required>
+              <div class="invalid-feedback">
+                Please enter a title.
+              </div>
+              <textarea name="details" id="" cols="" rows="10" placeholder="Details" class="w-100 p-2 mt-2"
+                required></textarea>
+            </div>
+            <input type="submit" value="Add Assignment" class="btn btn-success w-100" id="submit_assignments">
+          </form-group>
+        </div>
+        <button class="btn btn-primary" id="add_button"><span id="add_plus">+</span></button>
+        <!--   Scrollable Text View    -->
+
+        <hr>
         <!--   File upload   -->
-       <form-gorup class=" p-1">
-         <h2>Upload file here</h2>
-           <input type="file" name="upload" id="">
-           <br>
-           <input type="submit" value="Upload" class="btn btn-success mt-2">
-       </form-gorup>
-       <!--   File upload   -->
-       <hr>
-    <!--   SMS Text Area    -->
-          <form action="#" method=POST>
-             <label for="SMS message"><h3 class="m-0 p-0">Send SMS</h3></label>
-              <textarea name="SMS message" id="" cols="30" rows="10" placeholder="Type the SMS message here" class="form-control mt-4"></textarea>
-              <input type="submit" value="Send" class="btn btn-success mt-2 ">
-          </form>
-      <!--   SMS Text Area    -->
-       
-        </main>
+        <form-gorup class=" p-1">
+          <h2>Upload file here</h2>
+          <input type="file" name="upload" id="">
+          <br>
+          <input type="submit" value="Upload" class="btn btn-success mt-2">
+        </form-gorup>
+        <!--   File upload   -->
+        <hr>
+        <!--   SMS Text Area    -->
+        <form action="#" method=POST>
+          <label for="SMS message">
+            <h3 class="m-0 p-0">Send SMS</h3>
+          </label>
+          <textarea name="SMS message" id="" cols="30" rows="10" placeholder="Type the SMS message here"
+            class="form-control mt-4"></textarea>
+          <input type="submit" value="Send" class="btn btn-success mt-2 ">
+        </form>
+        <!--   SMS Text Area    -->
+
+      </main>
     </div>
-      </div>
-       
+  </div>
+
+  <script src="index.js"></script>
+
 </body>
+
 </html>
 
 
