@@ -2,7 +2,10 @@
 include('preincludes/dbh.php');
 include('preincludes/session.php');
 
+
 if(isset($_POST['but_upload'])){
+  
+  $assign_no=$_POST['ass_no'];
   $file=$_FILES['file']; 
 
   $fileName=$_FILES['file']['name'];
@@ -18,10 +21,15 @@ if(isset($_POST['but_upload'])){
   if(in_array($fileactualext,$allow)){
     if($fileError === 0){
       if($fileSize < 10000000000){
-        //$filenamenew=$_SESSION["name"];
+        $filenamenew=uniqid('',true).".".$fileactualext;
         $filedest='uploads/'.$filenamenew;
+        $query="insert into file_map(classid,name,filename,assign) values ('".$_SESSION['id']."','".$_SESSION['name']."','".$filenamenew."','".$assign_no."')";
+        $result=mysqli_query($link,$query);
+        if(!$result){
+        die('Query Failed');}
+        
         move_uploaded_file($fileTmpName,$filedest);
-        header("Location:searchbook.php?uploadsuccess");
+        header("Location:searchbook.php");
     }
     else{
       echo "Too big";

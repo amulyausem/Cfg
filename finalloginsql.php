@@ -27,7 +27,8 @@ if (mysqli_num_rows($result) > 0) {
    if($job)
    header("Location: Views/Teachers/Teacher_view.html");
    else
-   	echo "Student Login Successful";
+   header("Location: Student_view.php");
+
   
 }
 else {
