@@ -112,7 +112,7 @@
           <!--     Dynamically Generated list of cards         -->
         </div>
         <div class="card w-25 none" id="popup">
-          <form-group class="p-1" id="Assignment-form">
+          <form class="p-1" id="Assignment-form" action="#" method='POST'>
             <div class="card-title">
               <input type="text" name="title" id="" class="w-100" placeholder="Title" required>
               <div class="invalid-feedback">
@@ -122,19 +122,19 @@
                 required></textarea>
             </div>
             <input type="submit" value="Add Assignment" class="btn btn-success w-100" id="submit_assignments">
-          </form-group>
+          </form>
         </div>
         <button class="btn btn-primary" id="add_button"><span id="add_plus">+</span></button>
         <!--   Scrollable Text View    -->
 
         <hr>
         <!--   File upload   -->
-        <form-gorup class=" p-1">
+        <form class="p-1">
           <h2>Upload file here</h2>
-          <input type="file" name="upload" id="">
+          <input type="file" name="upload" id="" required>
           <br>
           <input type="submit" value="Upload" class="btn btn-success mt-2">
-        </form-gorup>
+        </form>
         <!--   File upload   -->
         <hr>
         <!--   SMS Text Area    -->
@@ -143,7 +143,7 @@
             <h3 class="m-0 p-0">Send SMS</h3>
           </label>
           <textarea name="SMS message" id="" cols="30" rows="10" placeholder="Type the SMS message here"
-            class="form-control mt-4"></textarea>
+            class="form-control mt-4" required></textarea>
           <input type="submit" value="Send" class="btn btn-success mt-2 ">
         </form>
         <!--   SMS Text Area    -->
