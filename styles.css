@@ -1,15 +1,17 @@
 
 styling_for_sample_form{}
-
+body {
+	background-color:#394989;
+}
 .form-style-5{
 	max-width: 500px;
 	padding: 10px 20px;
-	background: #776d8a;
+	background: white;
 	margin: 10px auto;
 	padding: 20px;
 	
   	opacity:0.8;
-	border-radius: 8px;
+	border-radius: 4px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -39,7 +41,7 @@ styling_for_sample_form{}
 	background: rgba(255,255,255,.1);
 	border: red;
  
-	border-radius: 6px;
+	border-radius: 2px;
 	font-size: 15px;
 	margin: 0;
 	outline: 0;
@@ -49,7 +51,7 @@ styling_for_sample_form{}
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box; 
 	background-color: #e8eeef;
-	color:#8a97a0;
+	color:#17a2b8;
 	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	margin-bottom: 30px;
@@ -94,20 +96,20 @@ styling_for_sample_form{}
 	padding: 19px 39px 18px 39px;
 	color: #FFF;
 	margin: 0 auto;
-	background: #1abc9c;
+	background: #394989;
 	font-size: 18px;
 	text-align: center;
 	font-style: normal;
 	width: 30%;
-	border-radius: 20px;
-	border: 1px solid #16a085;
+	border-radius: 5px;
+	/*border: 1px solid #16a085;
 	border-width: 1px 1px 3px;
-	margin-bottom: 10px;
+	margin-bottom: 10px;*/
 }
 .form-style-5 input[type="submit"]:hover,
 .form-style-5 input[type="button"]:hover
 {
-	background: #109177;
+	background: #fddb3a;
 }
 
 .error{
