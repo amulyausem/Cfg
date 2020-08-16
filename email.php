@@ -30,7 +30,7 @@ $email='usemamulya@gmail.com';
   $mail->setFrom($email, 'amulya');
   $mail->addAddress($to, 'Student'); 
   $mail->isHTML(true);                               
-  $mail->Subject = "Upadate on assignment submission";
+  $mail->Subject = "Update on assignment submission";
   $mail->Body = $email_body;
 
   if(!$mail->send()) {
