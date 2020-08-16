@@ -4,32 +4,14 @@ body {
   background-color: white;
   font-family: 'Oxygen', sans-serif;
 }
-p{
-  margin-left: 100px;
-}
-.container{
-  margin: 0;
-}
-.navbar-nav{
-  padding-left: 1000px;
-}
-#teacher{
-  margin-left: 200px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+
 /** HEADER **/
 #header-nav {
   background-color: #00BFFF;
   border-radius: 0;
   border: 0;
 }
-.logo{
-  background: url('../img/logo.jpg') no-repeat;
-    width: 150px;
-  height: 100px;
 
-}
 #logo-img {
   background: url('../images/build-design-foundation-150.jpeg') no-repeat;
   width: 150px;
@@ -142,7 +124,9 @@ p{
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container .jumbotron {
-    background: url('../images/Teacher-1200.jpg') no-repeat;  }
+    background: url('../images/Teacher-1200.jpg') no-repeat;
+    height: 675px;
+  }
 }
 
 /********** Medium devices only **********/

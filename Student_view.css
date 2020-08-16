@@ -30,3 +30,28 @@
     
     height:500px;
 }
+
+.none {
+    display: none;
+}
+
+.input {
+    width: 80px;
+  }
+
+.blue-bg {
+    background-color: #394989;
+}
+
+input[type=submit].blue-bg:hover,
+button.blue-bg:hover {
+background-color: #fddb3a;
+}
+
+.yellow-bg {
+background-color: #fddb3a;
+}
+
+.black-bg {
+background-color: #222;
+}

@@ -1,15 +1,17 @@
 
 styling_for_sample_form{}
-
+body {
+	background-color:#394989;
+}
 .form-style-5{
 	max-width: 500px;
 	padding: 10px 20px;
-	background: #776d8a;
+	background: white;
 	margin: 10px auto;
 	padding: 20px;
 	
   	opacity:0.8;
-	border-radius: 8px;
+	border-radius: 4px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -39,7 +41,7 @@ styling_for_sample_form{}
 	background: rgba(255,255,255,.1);
 	border: red;
  
-	border-radius: 6px;
+	border-radius: 2px;
 	font-size: 15px;
 	margin: 0;
 	outline: 0;
@@ -72,8 +74,8 @@ styling_for_sample_form{}
 	-webkit-appearance: menulist-button;
 	height:35px;
 }
-.form-style-5 .number {
-	background: #1abc9c;
+/*.form-style-5 .number {
+	background: #fddb3a;
 	color: #fff;
 	height: 30px;
 	width: 30px;
@@ -84,7 +86,7 @@ styling_for_sample_form{}
 	text-align: center;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
 	border-radius: 15px 15px 15px 0px;
-}
+}*/
 
 .form-style-5 input[type="submit"],
 .form-style-5 input[type="button"]
@@ -92,22 +94,22 @@ styling_for_sample_form{}
 	position: relative;
 	display: block;
 	padding: 19px 39px 18px 39px;
-	color: #FFF;
+	color: white;
 	margin: 0 auto;
-	background: #1abc9c;
+	background: #394989;
 	font-size: 18px;
 	text-align: center;
 	font-style: normal;
 	width: 30%;
-	border-radius: 20px;
-	border: 1px solid #16a085;
+	border-radius: 5px;
+	/*border: 1px solid #16a085;
 	border-width: 1px 1px 3px;
-	margin-bottom: 10px;
+	margin-bottom: 10px;*/
 }
 .form-style-5 input[type="submit"]:hover,
 .form-style-5 input[type="button"]:hover
 {
-	background: #109177;
+	background: #fddb3a;
 }
 
 
