@@ -11,7 +11,7 @@ $account_sid = 'AC5a4dc3153eae288b2a30de2afd4df383';
 $auth_token = '2599be1a9827db778b2c59d0ef8502e5';
 $twilio_number = "+12057821604"; // Twilio number you own
 
-$query="select * from `users` where job='0' and classid='jhdhhj'";
+$query="select * from `users` where job='0' and classid='".$_SESSION['id']."'";
 
 	$result=mysqli_query($link,$query);
 	
