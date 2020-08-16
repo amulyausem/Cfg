@@ -44,19 +44,21 @@ echo $_SESSION["id"];
     <!--    Basic Stats     -->
     <hr>
     <!--   Scrollable Text View  For Assignments  -->
-           <div class="container mt-5 jumbotron pt-1" id="text_view">
+         
     <!--     Dynamically Generated list of cards         -->
                <div class="card mb-1 p-2">
-                   <h5 class="p-0 m-0">ASSIGNMENT TITLE</h5>
-                   <p class="p-0 m-0">DESCRIPTION</p>
+                <form action="studentsuploadfile.php" method="post" enctype="multipart/form-data">
+                   <label for="field1">ASSIGNMENT NO:</label>
+                   <input type="text" name="ass_no" placeholder="Assignment no">
                    <br>
-                   <input type="file" name="upload" id="">
-                    <input type="submit" value="Upload" class="btn btn-success btn-sm mt-2 " id="upload_button">
+                   <input type="file" name="file" id="">
+                    <input type="submit" value="Upload" class="btn btn-success btn-sm mt-2 " id="upload_button" name="but_upload">
+                  </form>
                </div>
                
                
         <!--     Dynamically Generated list of cards         -->
-           </div>
+           
            
        <hr>
            <!--   Scrollable Text View    -->
